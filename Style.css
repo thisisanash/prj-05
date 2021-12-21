@@ -217,8 +217,8 @@ section.item-group {
   height: 100%;
   object-fit: cover;
 }
-.item .details{
-    padding: var(--spacing-l);
+.item .details {
+  padding: var(--spacing-l);
 }
 
 .item-group .item h3 {
@@ -236,8 +236,9 @@ section.item-group {
 @media screen and (max-width: 1000px) {
   section.item-group {
     margin: 5vh 0;
-    display: block;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     width: 100vw;
   }
   .item-group .item {
@@ -246,15 +247,16 @@ section.item-group {
 }
 
 @media screen and (max-width: 700px) {
-  .item-group .item.active{
+  .item-group .item.active {
     display: flex;
     flex-direction: column;
     padding: 0 0 var(--spacing-l) 0;
   }
-  section.item-group{
+  section.item-group {
     padding: var(--spacing-l);
   }
-  .item.active .img{
-      width: 100%;
-  } 
+  .item.active .img {
+    width: 100%;
+  }
 }
+
