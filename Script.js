@@ -5,11 +5,11 @@ let itemHolder = menu.querySelector(".item-group")
 let itemGroup = menu.querySelectorAll(".item");
 
 itemGroup.forEach(function(item){
-    item.classList.add("active")
+    item.classList.add("active");
+    btnGroup[0].classList.add("active");
 })
 
 btnGroup.forEach(function (btn) {
-    btn
     btn.addEventListener("click", function () {
         btnGroup.forEach(function (btns) {
             btns.classList.remove("active");
